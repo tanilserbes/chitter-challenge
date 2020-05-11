@@ -1,10 +1,11 @@
 feature 'Viewing Homepage' do
   scenario 'adding dieary_test text' do
     visit '/'
-    fill_in 'title', with: '04.05.2020'
-    fill_in 'msg', with: 'hello dear diary' 
-    click_button 'add' 
-    expect(page).to have_content 'hello dear diary'
-    expect(page).to have_content '04.05.2020'
+    fill_in 'title', with: 'FIRST BEST DAY!'
+    fill_in 'msg', with: 'Dear Diary, i opened up my feelings firstly today, so exiceted!.' 
+    click_button 'add'
+    expect(page).to have_content 'FIRST BEST DAY!'
+    expect(page).to have_content 'Dear Diary, i opened up my feelings firstly today, so exiceted!.'
   end
 end
+
